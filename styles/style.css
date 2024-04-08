@@ -23,18 +23,6 @@ body {
   line-height: 1;
 }
 
-div,
-p,
-img,
-button,
-h1,
-h2,
-h3 {
-  margin: 0;
-  /* border: 1px solid;
-  border-color: crimson; */
-}
-
 .header {
   margin: 1% auto 0;
   height: 10vh;
@@ -184,6 +172,7 @@ h3 {
   margin: 0 auto 0;
   object-fit: contain;
   width: max(20vw, 125px);
+  height: auto;
 }
 
 .footer {
