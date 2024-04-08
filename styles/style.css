@@ -54,6 +54,7 @@ h3 {
 
 .menu_button {
   background-color: #FFF2E1;
+  color: #232328;
   font-size: 1.8em;
   border: 0;
 }
@@ -159,7 +160,7 @@ h3 {
   min-width: 10em;
   margin-top: 3%;
   margin-bottom: 3%;
-  font-size: 0.9em;
+  font-size: 1em;
   display: inline-block;
 }
 
@@ -175,18 +176,18 @@ h3 {
   width: max(80%, 300px);
   margin-top: 4%;
   margin-bottom: 4%;
-  font-size: min(3em, 4vh);
+  font-size: min(3em, 7vw);
   text-align: center;
 }
 
 .cool_picture {
-  margin: auto;
+  margin: 0 auto 0;
   object-fit: contain;
-  width: max(15vw, 125px);
+  width: max(20vw, 125px);
 }
 
 .footer {
-  height: 20vh;
+  height: 15vh;
   width: max(60vw, 300px);
   display: flex;
   flex-direction: row;
@@ -197,9 +198,9 @@ h3 {
 }
 
 .attract_attention {
-  font-size: 3em;
-  padding-left: 10%;
-  padding-right: 10%;
+  font-size: min(3em, 5vw);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .links {
@@ -212,7 +213,7 @@ h3 {
 .social_networks {
   background-color: #FFF2E1;
   color: #232328;
-  font-size: 3em;
+  font-size: min(3em, 5vw);
   font-weight: 300;
   border: 0;
   text-decoration: none;
