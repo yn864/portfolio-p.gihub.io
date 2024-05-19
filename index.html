@@ -4,102 +4,296 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>4</title>
+  <link rel="stylesheet" href="vendor/reset.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
 
-  <link rel="preload" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet">
-
-  <link rel="icon" type="image/x-icon" href="images/globe.png">
+  <link rel="icon" type="image/x-icon" href="images/globe_icon.svg">
 </head>
 
-<body>
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <div class="header-container">
+        <a class="logo" href="/">
+          <svg fill="#232328" width="38px" height="38px" viewBox="0 0 32 32" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z"
+              fill="#232328" />
+          </svg>
+          <span class="logo__title">Yesign prod</span>
+        </a>
+        <a class="navigation-button" href="#footer">Contacts</a>
+      </div> 
+    </header>
 
-  <div class="header">
-    <p class="logo_text">Yesign prod
-    <p>
-      <button class="menu_button">
-        menu
-        <i class="fa-solid fa-spinner"></i>
-      </button>
-  </div>
+    <!-- floating header panel -->
 
+    <div class="fixed-header">
+      <div class="header-container">
+        <a class="logo" href="/">
+          <svg fill="#232328" width="38px" height="38px" viewBox="0 0 32 32" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z"
+              fill="#232328" />
+          </svg>
+          <span class="logo__title">Yesign prod</span>
+        </a>
 
-  <div class="main">
-    <div class="profile">
-      <div class="profile_name">
-        <h1 class="name">Yan Anderson</h1>
-        <div class="additional_info">
-          <h2 class="additional_text accent_text">*Born&nbsp;</h2>
-          <h2 class="additional_text">to live</h2>
+        <a class="navigation-button" href="#footer">Contacts</a>
+      </div>
+    </div>
+    <main class="content">
+      <section class="profile-content">
+        <div class="profile-captions">
+          <h1 class="profile-name">Yan Anderson<br>Here to amaze.</h1>
+          <h2 class="profile-info">*Exclusive creator</h2>
         </div>
+        <img class="profile-picture" src="images/profile_picture.jpg" alt="profile picture" draggable="false">
+      </section>
+
+      <div class="content-wrapper">
+        <section class="additional-content">
+          <h2 class="sub-heading">More about</h2>
+          <p class="content-block">
+            Est sit takimata facilisis stet tempor amet diam sadipscing accusam nibh sed at takimata stet clita. Eos
+            stet
+            nislut ipsum. Lorem laoreet clita amet nibh hendrerit dolores vulputate vero ipsum nonumy sadipscing ea
+            diam.
+            Magna sed illum dolor dolore accusam eirmod kasd est ut autem sed duo ipsum mazim dolores diam takimata.
+          </p>
+        </section>
+
+        <section class="info-content">
+          <div class="category">
+            <h3 class="category__title">Education</h3>
+            <h4 class="category__description">HSSE MIPT</h4>
+          </div>
+          <div class="category">
+            <h3 class="category__title">Specialized at</h3>
+            <h4 class="category__description">Hoopin</h4>
+          </div>
+          <div class="category">
+            <h3 class="category__title">Expertize</h3>
+            <h4 class="category__description">Unique</h4>
+          </div>
+        </section>
+
+        <h2 class="sub-heading">My best works</h2>
+
+        <section class="gallery">
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_1.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_2.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_3.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_4.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_5.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_6.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_7.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+          <article class="card">
+            <img draggable="false" class="card__image" src="images/image_8.svg">
+            <h3 class="card__title">Title</h4>
+          </article>
+        </section>
+
+        <!-- popup gallery -->
+        <div class="overlay-view">
+        </div>
+        <div class="view-area">
+          <svg class="previous-button" fill="#4c4c4c" height="800px" width="800px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+            <path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14S23.7,2,16,2z M18.7,19.5c0.4,0.4,0.4,1,0,1.4c-0.2,0.2-0.5,0.3-0.7,0.3  s-0.5-0.1-0.7-0.3l-4.2-4.2c-0.4-0.4-0.4-1,0-1.4l4.2-4.2c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L15.2,16L18.7,19.5z" fill="#4c4c4c"/>
+          </svg>
+          <svg class="next-button" fill="#4c4c4c" height="800px" width="800px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+            <path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14S23.7,2,16,2z M18.9,16.7l-4.2,4.2c-0.2,0.2-0.5,0.3-0.7,0.3  s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l3.5-3.5l-3.5-3.5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l4.2,4.2C19.3,15.7,19.3,16.3,18.9,16.7z  " fill="#4c4c4c"/>
+          </svg>
+        </div>
+
+        
+
+          <h2 class="sub-heading">Till the main event...</h2>
+          <div class="countdown">
+            <span class="days time"></span>
+            <span class="hours time"></span> 
+            <span class="minutes time"></span> 
+            <span class="seconds time"></span>
+          </div>
+          <p class="topic">
+            So you've got some time
+            to share your thoughts!
+          </p>
+
+          <a class="form-popup-button">
+            Let's do it
+          </a>
+          <div class="svg-container">
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+            <svg class="svg-element" id="SVGRoot" width="100px" height="120px" version="1.1" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6e6e6e" stroke-width="0">
+              <rect x=".49855" y=".49855" width="299" height="399"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              <path d="m0.5465 200.02v-199.2h298.94v398.4h-298.94z"/>
+              </g>
+            </svg>
+          </div>
+
+          <section class="form">
+            <form class="form__admin" >
+              <h2 class="form__title">Fill the form</h2>
+              <div class="form__main-container">
+                <fieldset class="form__input-container">
+                  <div class="field__holder">
+                    <input type="email" class="form__item email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="field__holder">
+                    <input type="tel" class="form__item phone" name="phone-number" placeholder="Phone number" required>
+                  </div>
+                  <div class="field__holder">
+                    <textarea class="form__item text" name="review" placeholder="Share your opinion" required></textarea>
+                  </div>
+                  <div class="form__handler">
+                    <input type="submit" class="form__button hover" value="Submit">
+                  </div>
+                </fieldset>
+              </div>  
+            </form>
+          </section>
       </div>
-      <img fetchpriority="high" class="profile_pic" src="images/profile_pic.webp" alt="profile picture">
-    </div>
 
-    <div class="info">
-      <div class="category">
-        <div class="category_header accent_text">Education</div>
-        <div class="category_description">HSSE MIPT</div>
-      </div>
-      <div class="category">
-        <div class="category_header accent_text">Specialized at</div>
-        <div class="category_description">Hoopin</div>
-      </div>
-      <div class="category">
-        <div class="category_header accent_text">Experience</div>
-        <div class="category_description">Unique</div>
-      </div>
-    </div>
+      <div class="popup-banner">Popup</div>
+    </main>
+    <footer id="footer" class="footer">
 
-    <hr class="separator">
-
-    <div class="main_info">
-      <p class="content_block">
-        Est sit takimata facilisis stet tempor amet diam sadipscing accusam nibh sed at takimata stet clita. Eos stet
-        nislut ipsum. Lorem laoreet clita amet nibh hendrerit dolores vulputate vero ipsum nonumy sadipscing ea diam.
-        Magna sed illum dolor dolore accusam eirmod kasd est ut autem sed duo ipsum mazim dolores diam takimata.
-      <p>
-      <div class="sub_heading">
-        <h2 class="additional_text">About&nbsp;</h2>
-        <h2 class="additional_text accent_text">Me</h2>
-      </div>
-    </div>
-
-    <h3 class="description">
-      My name is Yan. Ima Creator All-Star MasterChef Producer Strong Man Nature lover Student
-    </h3>
-
-    <img class="cool_picture" src="images/cookin.webp" alt="cool picture">
-
+    </footer>
   </div>
 
-  <!-- <hr class="separator"> -->
+  <form name="refreshCatcher">
+    <input type="hidden" name="visited" value="0">
+  </form>
 
-  <div class="footer">
-    <div class="attract_attention">Let's mix our spices</div>
-    <div class="links">
-      <a href="" class="social_networks">tg&nbsp;</a>
-      <a href="" class="social_networks">vk&nbsp;</a>
-      <a href="" class="social_networks">mail</a>
-    </div>
-
-  </div>
-
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
