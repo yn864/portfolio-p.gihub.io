@@ -1,6 +1,3 @@
-@import url('/vendor/reset.css');
-@import url('/fonts/fonts.css');
-
 @keyframes popup {
     from {
         opacity: 0;
